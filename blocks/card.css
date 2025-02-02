@@ -2,11 +2,18 @@
   width: 413px;
 }
 
+.card__title {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #212121;
+}
+
 .card__image {
   height: 413px;
   width: 413px;
   object-fit: cover;
   display: block;
+  border-radius: 1%;
 }
 
 .card__content {
@@ -22,4 +29,14 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+}
+@media screen and (max-width: 627px);
+ {
+  .card {
+    margin: 0;
+  }
+  .card__image {
+    width: 288px;
+    height: 318px;
+  }
 }
