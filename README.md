@@ -6,7 +6,7 @@ A website where others can share their photos
 
 ## Tech stack
 
--HTMl
+-HTML
 -CSS
 -Responsive Design
 
@@ -14,4 +14,4 @@ A website where others can share their photos
 
 This webpage is deployed to Github pages
 
--Deployment Link:
+-Deployment Link: https://jadenb22.github.io/se_projects_spots/
