@@ -6,6 +6,12 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: #212121;
+  font-size: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
 }
 
 .card__image {
@@ -13,7 +19,7 @@
   width: 413px;
   object-fit: cover;
   display: block;
-  border-radius: 1%;
+  border-radius: 8px;
 }
 
 .card__content {
@@ -35,8 +41,14 @@
   .card {
     margin: 0;
   }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
   .card__image {
     width: 288px;
-    height: 318px;
+    height: 288px;
   }
 }
