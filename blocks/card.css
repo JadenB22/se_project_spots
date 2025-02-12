@@ -6,12 +6,13 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: #212121;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 24px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0;
+
 }
 
 .card__image {
