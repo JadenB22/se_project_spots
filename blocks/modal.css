@@ -10,11 +10,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+}
+.modal_opened {
+  visibility: visible;
 }
 
 .modal__close-btn {
   background-image: url(../images/Group\ 27.svg);
-
   background-size: contain;
   background-color: rgba(33, 33, 33), transparent;
   opacity: 40%;
