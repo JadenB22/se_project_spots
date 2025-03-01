@@ -1,3 +1,4 @@
+// Array of initial cards
 const initialCards = [
   {
     name: "Val Thorens",
@@ -42,18 +43,37 @@ const editModalDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
 
+// Template and cards
+const cardsList = document.querySelector(".cards__list");
+const cardTemplate = document.querySelector("#card-template");
+
+// Function to create a new card
+function getCardElement(data) {
+  const cardElement = cardTemplate.content
+    .querySelector(".card")
+    .cloneNode(true);
+  const cardImageElement = cardElement.querySelector(".card__image");
+  const cardNameElement = cardElement.querySelector(".card__title");
+
+  cardNameElement.textContent = data.name;
+  cardImageElement.src = data.link;
+  cardImageElement.alt = data.name; // FIXED: Use `data.name` for `alt`
+
+  return cardElement;
+}
+
 // Form Submission
 const editFormElement = editProfileModal.querySelector(".modal__form");
 
 function openModal() {
-  editModalNameInput.value = profileName.textContent; // Fill profile name form field
-  editModalDescriptionInput.value = profileDescription.textContent; // Fill description form field
+  editModalNameInput.value = profileName.textContent;
+  editModalDescriptionInput.value = profileDescription.textContent;
   editProfileModal.classList.add("modal_opened");
 }
 
 function handleFormEditSubmit(evt) {
   evt.preventDefault();
-  profileName.textContent = editModalNameInput.value; // Input to text
+  profileName.textContent = editModalNameInput.value;
   profileDescription.textContent = editModalDescriptionInput.value;
   closeModal();
 }
@@ -65,3 +85,9 @@ function closeModal() {
 profileEditButton.addEventListener("click", openModal);
 editModalCloseBtn.addEventListener("click", closeModal);
 editFormElement.addEventListener("submit", handleFormEditSubmit);
+
+// Load initial cards using forEach (Cleaner)
+initialCards.forEach((card) => {
+  const cardElement = getCardElement(card);
+  cardsList.prepend(cardElement);
+});
