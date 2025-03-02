@@ -19,7 +19,7 @@
 .modal__close-btn {
   background-image: url(../images/Group\ 27.svg);
   background-size: contain;
-  background-color: rgba(33, 33, 33), transparent;
+  background-color: transparent;
   opacity: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 
 .modal__title {
   margin: 0 0 32px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -57,7 +57,7 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 32px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: rgba(33, 33, 33, 0.7);
@@ -81,11 +81,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+  cursor: pointer;
 }
 
-.placeholder {
+::placeholder {
   color: rgba(33, 33, 33, 0.3);
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -109,6 +110,7 @@
   .modal__close-btn {
     top: 12px;
     right: 22px;
+    cursor: pointer;
   }
 
   .modal__submit-btn {
