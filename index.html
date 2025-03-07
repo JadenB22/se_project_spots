@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="keywords" content="HTML, CSS, ???" />
+    <meta name="description" content="A social platform for sharing spots" />
+    <meta name="author" content="Your Name" />
+    <meta name="keywords" content="HTML, CSS, Social, Profile, Spots" />
     <link rel="stylesheet" href="pages/index.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Spots</title>
@@ -31,28 +31,32 @@
             </button>
           </div>
           <button type="button" class="profile__add-button">
-            <img src="./images/plus_icon.svg" alt=" Plus icon" />
+            <img src="./images/plus_icon.svg" alt="Plus icon" />
             <span>New Post</span>
           </button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <template id="card-template"
-              ><li class="card">
+            <template id="card-template">
+              <li class="card">
                 <img src="" alt="" class="card__image" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
                   <button type="button" class="card__like-button"></button>
-                </div></li
-            ></template>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__title">2023 &copy; Spots</p>
       </footer>
+
+      <!-- Edit Profile Modal -->
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit profile</h2>
           <form name="edit-profile" class="modal__form">
             <label for="profile-name-input" class="modal__label">
@@ -65,7 +69,6 @@
                 placeholder="Type your name"
               />
             </label>
-            <button type="button" class="modal__close-btn"></button>
             <label for="profile-description-input" class="modal__label">
               Description
               <input
@@ -80,28 +83,29 @@
         </div>
       </div>
 
-      <div class="modal__opened" id="edit-profile-modal">
+      <!-- Add Card Modal -->
+      <div class="modal" id="add-card-modal">
         <div class="modal__container">
-          <h2 class="modal__title">Edit profile</h2>
-          <form name="edit-profile" class="modal__form">
-            <label for="profile-name-input" class="modal__label">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Add Card</h2>
+          <form name="add-card" class="add-card__form">
+            <label for="add-card-name-input" class="modal__label">
               Name
               <input
                 required
-                id="profile-name-input"
+                id="add-card-name-input"
                 type="text"
                 class="modal__input"
-                placeholder="Type your name"
+                placeholder="Enter card name"
               />
             </label>
-            <button type="button" class="modal__close-btn"></button>
-            <label for="profile-description-input" class="modal__label">
+            <label for="add-card-description-input" class="modal__label">
               Description
               <input
-                id="profile-description-input"
+                id="add-card-description-input"
                 type="text"
                 class="modal__input"
-                placeholder="Describe yourself"
+                placeholder="Describe the card"
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
