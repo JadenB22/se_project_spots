@@ -15,11 +15,19 @@
 .modal_opened {
   visibility: visible;
 }
+<<<<<<< HEAD
 .modal__close-btn {
   background-image: url(../images/xsymbol.svg);
   background-size: contain;
   background-color: transparent;
   color: rgba(33, 33, 33);
+=======
+
+.modal__close-btn {
+  background-image: url(../images/Group\ 27.svg);
+  background-size: contain;
+  background-color: transparent;
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   opacity: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,9 +42,12 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .modal__close-btn:hover {
   opacity: 1;
 }
+=======
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .modal__container {
   background-color: rgba(255, 255, 255, 1);
   max-width: 730px;
@@ -46,6 +57,10 @@
   box-sizing: border-box;
   border-radius: 8px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .modal__title {
   margin: 0 0 32px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -54,6 +69,10 @@
   line-height: 1;
   top: 32px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .modal__label {
   display: flex;
   flex-direction: column;
@@ -64,12 +83,20 @@
   font-size: 16px;
   color: rgba(33, 33, 33, 0.7);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .modal__input {
   padding: 16px 12px;
   max-width: 630px;
   border-radius: 8px;
   border: 1px solid rgba(33, 33, 33, 0.4);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .modal__submit-btn {
   width: 156px;
   height: 52px;
@@ -83,6 +110,10 @@
   line-height: 16px;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .modal__input::placeholder {
   color: rgba(33, 33, 33, 0.3);
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -90,23 +121,43 @@
   font-size: 16px;
   line-height: 16px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
   }
+<<<<<<< HEAD
   .modal__container {
     padding: 12px;
   }
+=======
+
+  .modal__container {
+    padding: 12px;
+  }
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   .modal__title {
     top: 22px;
     max-width: 106px;
     font-size: 20px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   .modal__close-btn {
     top: 12px;
     right: 22px;
     cursor: pointer;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   .modal__submit-btn {
     width: 100%;
     padding-left: 12px;

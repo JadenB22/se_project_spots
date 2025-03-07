@@ -39,6 +39,10 @@
   background-size: cover;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .card__like-button:hover {
   opacity: 100%;
 }
@@ -47,9 +51,17 @@
     margin: 0;
     max-width: 288px;
   }
+<<<<<<< HEAD
   .card__content {
     max-width: 288px;
   }
+=======
+
+  .card__content {
+    max-width: 288px;
+  }
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   .card__title {
     font-size: 16px;
     line-height: 16px;
@@ -60,6 +72,10 @@
     width: 288px;
     height: 288px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   .card__like-button {
     width: 20px;
     height: 18px;
