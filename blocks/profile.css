@@ -23,10 +23,6 @@
   overflow: hidden;
   -webkit-line-clamp: 3;
   display: -webkit-box;
-<<<<<<< HEAD
-=======
-
->>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   -webkit-box-orient: vertical;
   max-width: 420px;
   color: #212121;
@@ -39,10 +35,6 @@
   overflow: hidden;
   -webkit-line-clamp: 3;
   display: -webkit-box;
-<<<<<<< HEAD
-=======
-
->>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   -webkit-box-orient: vertical;
   max-width: 420px;
   font-family: poppins, Arial, Helvetica, sans-serif;
@@ -64,17 +56,9 @@
   column-gap: 8px;
   cursor: pointer;
 }
-<<<<<<< HEAD
 .profile__edit-button:hover {
   opacity: 100%;
 }
-=======
-
-.profile__edit-button:hover {
-  opacity: 100%;
-}
-
->>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .profile__add-button {
   margin-left: auto;
   margin-top: auto;
@@ -91,17 +75,9 @@
   gap: 8px;
   cursor: pointer;
 }
-<<<<<<< HEAD
 .profile__add-button:hover {
   opacity: 80%;
 }
-=======
-
-.profile__add-button:hover {
-  opacity: 80%;
-}
-
->>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 @media screen and (max-width: 627px) {
   .profile {
     flex-direction: column;
