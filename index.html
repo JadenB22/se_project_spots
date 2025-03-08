@@ -39,6 +39,7 @@
           <ul class="cards__list">
             <template id="card-template">
               <li class="card">
+                <button type="button" class="card__button_delete"></button>
                 <img src="" alt="" class="card__image" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
@@ -90,24 +91,24 @@
           <h2 class="modal__title">Add Card</h2>
           <form name="add-card" class="add-card__form">
             <label for="add-card-name-input" class="modal__label">
-              Name
+              Image Caption
               <input
                 required
                 id="add-card-name-input"
                 type="text"
                 class="modal__input"
                 name="link"
-                placeholder="Enter card name"
+                placeholder="Type your caption"
               />
             </label>
-            <label for="add-card-name-input" class="modal__label">
-              Description
+            <label for="add-card-link-input" class="modal__label">
+              Image Link
               <input
-                id="add-card-name-input"
+                id="add-card-link-input"
                 type="text"
                 class="modal__input"
                 name="name"
-                placeholder="Describe the card"
+                placeholder="Paste a link to the picture"
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>

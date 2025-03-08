@@ -1,6 +1,8 @@
 .card {
   max-width: 413px;
+  position: relative; /* Keeps the delete button positioned relative to the card */
 }
+
 .card__title {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -13,6 +15,7 @@
   margin: 0;
   max-width: 353px;
 }
+
 .card__image {
   height: 413px;
   width: 413px;
@@ -20,12 +23,16 @@
   display: block;
   border-radius: 8px;
   margin-bottom: 12px;
+  position: relative; /* Ensure stacking context */
+  z-index: 1; /* Lower than the delete button */
 }
+
 .card__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .card__like-button {
   background-image: url(../images/heart.svg);
   width: 23px;
@@ -39,43 +46,65 @@
   background-size: cover;
   cursor: pointer;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
 .card__like-button:hover {
   opacity: 100%;
+}
+
+.card__like-button_liked {
+  background-image: url(../images/State=Liked.svg);
+  opacity: 1;
+}
+
+.card__like-button_liked:hover {
+  background-image: url(../images/State=Liked-hover.svg);
+}
+
+.card__button_delete {
+  background-image: url(../images/delete-btn-default.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2; /* Ensures it appears above the image */
+}
+.card__button_delete:hover {
+  background-color: rgba(255, 101, 101);
 }
 @media screen and (max-width: 627px) {
   .card {
     margin: 0;
     max-width: 288px;
   }
-<<<<<<< HEAD
-  .card__content {
-    max-width: 288px;
-  }
-=======
 
   .card__content {
     max-width: 288px;
   }
 
->>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   .card__title {
     font-size: 16px;
     line-height: 16px;
     text-align: center;
     justify-content: space-between;
   }
+
   .card__image {
     width: 288px;
     height: 288px;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 24b2489787962e5f452cbd1c08b50aa929f6c111
   .card__like-button {
     width: 20px;
     height: 18px;
