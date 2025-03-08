@@ -14,6 +14,7 @@
 }
 .modal_opened {
   visibility: visible;
+  z-index: 2;
 }
 .modal__close-btn {
   background-image: url(../images/xsymbol.svg);
@@ -37,6 +38,7 @@
 .modal__close-btn:hover {
   opacity: 1;
 }
+
 .modal__container {
   background-color: rgba(255, 255, 255, 1);
   max-width: 730px;
@@ -54,6 +56,7 @@
   line-height: 1;
   top: 32px;
 }
+
 .modal__label {
   display: flex;
   flex-direction: column;
@@ -62,13 +65,17 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: rgba(33, 33, 33, 0.7);
+  color: rgba(33, 33, 33);
 }
 .modal__input {
   padding: 16px 12px;
   max-width: 630px;
   border-radius: 8px;
   border: 1px solid rgba(33, 33, 33, 0.4);
+}
+
+.modal__input:hover {
+  border: 1px solid rgba(33, 33, 33, 1);
 }
 .modal__submit-btn {
   width: 156px;
@@ -89,6 +96,55 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+}
+.modal__content {
+  max-width: 730px;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+  position: relative;
+  border: none;
+  padding: 36px 50px 32px;
+}
+
+.modal__close_type-preview {
+  padding: 0;
+}
+.modal__close_preview-btn {
+  background-image: url(../images/light-close-btn.svg);
+  padding: 0;
+  top: 0;
+  right: -52.5px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.modal__close_preview-btn:hover {
+  opacity: 40%;
+}
+.modal__image {
+  width: 100%;
+  object-fit: contain;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+.modal__caption {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(255, 255, 255);
+  background-color: rgba(33, 33, 33);
+  border-radius: 8px;
+
+  position: center;
+  padding: 4px 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 214px;
+  margin: 0;
 }
 @media screen and (max-width: 627px) {
   .modal {
@@ -111,5 +167,8 @@
     width: 100%;
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .modal__caption {
+    max-width: 111px;
   }
 }
