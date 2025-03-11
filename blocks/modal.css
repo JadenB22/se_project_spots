@@ -3,17 +3,21 @@
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0 16px;
   right: 0;
+  padding: 0 16px;
   background-color: rgba(33, 33, 33, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+
 .modal_opened {
   visibility: visible;
+  opacity: 1;
   z-index: 2;
 }
 .modal__close-btn {
@@ -21,7 +25,7 @@
   background-size: contain;
   background-color: transparent;
   color: rgba(33, 33, 33);
-  opacity: 40%;
+  opacity: 0.4;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -54,7 +58,7 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
-  top: 32px;
+  top: 33px;
 }
 
 .modal__label {
@@ -90,6 +94,10 @@
   line-height: 16px;
   cursor: pointer;
 }
+
+.modal__submit-btn:hover {
+  opacity: 0.8;
+}
 .modal__input::placeholder {
   color: rgba(33, 33, 33, 0.3);
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -108,21 +116,31 @@
   padding: 36px 50px 32px;
 }
 
-.modal__close_type-preview {
-  padding: 0;
-}
-.modal__close_preview-btn {
-  background-image: url(../images/light-close-btn.svg);
-  padding: 0;
-  top: 0;
-  right: -52.5px;
+.modal__close-btn {
+  position: absolute;
+  top: 30px; /* Adjust based on Figma */
+  right: 16px; /* Adjust based on Figma */
   width: 40px;
   height: 40px;
+  background-image: url(../images/xsymbol.svg);
+  background-size: contain;
   background-repeat: no-repeat;
-  opacity: 1;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
 }
-.modal__close_preview-btn:hover {
-  opacity: 40%;
+
+.modal__close-btn_type_preview {
+  background-image: url("../images/light-close-btn.svg");
+  top: 30px;
+  right: -5px;
+}
+
+.modal__close-btn:hover {
+  opacity: 0.4;
 }
 .modal__image {
   width: 100%;
@@ -138,7 +156,7 @@
   background-color: rgba(33, 33, 33);
   border-radius: 8px;
 
-  position: center;
+  position: relative;
   padding: 4px 8px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -146,7 +164,7 @@
   max-width: 214px;
   margin: 0;
 }
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 320px) {
   .modal {
     padding: 0 10px;
   }
@@ -170,5 +188,20 @@
   }
   .modal__caption {
     max-width: 111px;
+  }
+  .modal__title {
+    top: 12px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+  }
+  .modal__close-btn {
+    top: 12px;
+  }
+  .modal__label {
+    max-width: 276;
+    max-height: 248;
+    gap: 24px;
   }
 }

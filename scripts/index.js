@@ -108,9 +108,7 @@ function handleFormEditSubmit(evt) {
   closeModal(editProfileModal);
 }
 
-const previewModalCloseBtn = previewModal.querySelector(
-  ".modal__close_preview-btn"
-);
+const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
