@@ -60,7 +60,7 @@
   background-image: url(../images/State=Liked-hover.svg);
 }
 
-.card__button_delete {
+.card__button-delete {
   background-image: url(../images/delete-btn-default.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -80,7 +80,7 @@
   right: 10px;
   z-index: 2; /* Ensures it appears above the image */
 }
-.card__button_delete:hover {
+.card__button-delete:hover {
   background-color: rgba(255, 101, 101);
 }
 
