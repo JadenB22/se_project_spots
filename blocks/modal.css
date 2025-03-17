@@ -59,6 +59,7 @@
   font-size: 32px;
   line-height: 1;
   top: 33px;
+  display: flex;
 }
 
 .modal__label {
@@ -70,6 +71,7 @@
   font-weight: 500;
   font-size: 16px;
   color: rgba(33, 33, 33);
+  opacity: 0.7;
 }
 .modal__input {
   padding: 16px 12px;
@@ -85,8 +87,8 @@
   width: 156px;
   height: 52px;
   padding: 18px 32px;
-  background-color: rgba(33, 33, 33, 1);
-  color: rgba(252, 245, 229, 1);
+  background-color: rgb(33, 33, 33);
+  color: rgb(252, 245, 229);
   border-radius: 8px;
   font-family: Poppins;
   font-weight: 500;
@@ -125,22 +127,22 @@
   background-image: url(../images/xsymbol.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+
   background-color: transparent;
   border: none;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.4;
   transition: opacity 0.3s ease-in-out;
 }
 
 .modal__close-btn_type_preview {
   background-image: url("../images/light-close-btn.svg");
-  top: 40px;
-  right: 52px;
+  top: 28px;
+  right: -5px;
 }
 
 .modal__close-btn:hover {
-  opacity: 0.4;
+  opacity: 1;
 }
 .modal__image {
   width: 100%;
@@ -171,15 +173,9 @@
   .modal__container {
     padding: 12px;
   }
-  .modal__title {
-    top: 22px;
-    max-width: 106px;
-    font-size: 20px;
-  }
+
   .modal__close-btn {
-    top: 12px;
-    right: 22px;
-    cursor: pointer;
+    padding: -4px;
   }
   .modal__submit-btn {
     width: 100%;
@@ -189,20 +185,25 @@
   .modal__caption {
     font-size: 16px;
     max-width: 111px;
+    padding: 14px 0;
   }
   .modal__title {
-    top: 12px;
+    padding: 26px 0 34px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
+    margin: 0;
   }
-  .modal__close-btn {
-    top: 12px;
+  .modal__close-btn_type_preview {
+    padding-top: -15px; /* Adjust for mobile screens */
+    right: 45px;
+    width: 36px;
+    height: 36px;
   }
   .modal__label {
     max-width: 276;
     max-height: 248;
-    gap: 24px;
+    bottom: 8px;
   }
 }
