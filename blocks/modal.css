@@ -139,6 +139,10 @@
   background-image: url("../images/light-close-btn.svg");
   top: 28px;
   right: -5px;
+  color: rgba(255, 255, 255, 1);
+}
+.modal__close-btn_type_preview:hover {
+  opacity: 0.4;
 }
 
 .modal__close-btn:hover {
@@ -169,11 +173,14 @@
 @media screen and (max-width: 320px) {
   .modal {
     padding: 0 10px;
+    background-color: rgba(33, 33, 33, 0.9);
   }
   .modal__container {
     padding: 12px;
   }
-
+  .modal__content {
+    padding: 0 16px;
+  }
   .modal__close-btn {
     padding: -4px;
   }
@@ -196,10 +203,10 @@
     margin: 0;
   }
   .modal__close-btn_type_preview {
-    padding-top: -15px; /* Adjust for mobile screens */
-    right: 45px;
-    width: 36px;
-    height: 36px;
+    right: 10px; /* Ensure preview close button aligns as well */
+    top: -30px;
+    width: 32px;
+    height: 32px;
   }
   .modal__label {
     max-width: 276;
