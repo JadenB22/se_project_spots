@@ -24,8 +24,8 @@
   background-image: url(../images/xsymbol.svg);
   background-size: contain;
   background-color: transparent;
-  color: rgba(33, 33, 33);
-  opacity: 0.4; /* Default state */
+  color: rgb(33, 33, 33);
+  opacity: 0.4;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -128,8 +128,8 @@
 
 .modal__close-btn {
   position: absolute;
-  top: 30px; /* Adjust based on Figma */
-  right: 16px; /* Adjust based on Figma */
+  top: 30px;
+  right: 16px;
   width: 40px;
   height: 40px;
   background-image: url(../images/xsymbol.svg);
@@ -139,7 +139,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  opacity: 0.4;
+
   transition: opacity 0.3s ease-in-out;
 }
 
