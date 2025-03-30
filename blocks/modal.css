@@ -143,9 +143,9 @@
 .modal__close-btn_type_preview:hover {
   opacity: 0.4;
 }
-.button__inactive {
-  opacity: 0.4;
-  pointer-events: none;
+.modal__submit-btn_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 .modal__image {
   width: 100%;
