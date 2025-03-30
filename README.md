@@ -31,10 +31,7 @@ Built with ❤️ as part of my **Front-End Engineering** journey at **TripleTen
 
 ## 📽️ Demo Video
 
-🎬 [Watch on YouTube](https://youtu.be/eTGH1xWEsg0)  
-_(or preview below)_
-
-> 📂 [Click here to download video demo](./images/spotsvideo.mp4)
+> 📂 [Click here for video demo](./images/spotsvideo.mp4)
 
 ---
 
