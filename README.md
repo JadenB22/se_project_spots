@@ -6,13 +6,6 @@ Built with ❤️ as part of my **Front-End Engineering** journey at **TripleTen
 
 ---
 
-## 🖼️ Preview
-
-![App Screenshot - Main Page](./images/screenshot1.png)
-![App Screenshot - New Post Modal](./images/screenshot2.png)
-
----
-
 ## 💻 Tech Stack
 
 - **HTML5**
@@ -26,12 +19,6 @@ Built with ❤️ as part of my **Front-End Engineering** journey at **TripleTen
 ## 🚀 Live Deployment
 
 👉 [**View Live on GitHub Pages**](https://jadenb22.github.io/se_project_spots/)
-
----
-
-## 📽️ Demo Video
-
-> 📂 [Click here for video demo](./images/spotsvideo.mp4)
 
 ---
 
