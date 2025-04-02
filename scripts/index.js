@@ -144,7 +144,7 @@ cardForm.addEventListener("submit", (evt) => {
 
   renderCard(inputValues); // add new card to top
   cardForm.reset();
-  disableButton(evt.submitter);
+  disableButton(evt.submitter, validationConfig);
   closeModal(cardModal);
 });
 
