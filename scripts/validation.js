@@ -76,9 +76,9 @@ const validationConfig = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__submit-btn",
-  inactiveButtonClass: "modal__submit-btn_disabled", //  Updated BEM class
+  inactiveButtonClass: "button__inactive",
   inputErrorClass: "modal__input_type-error",
-  errorClass: "modal__error_visible",
+  errorClass: "modal__error",
 };
 
 enableValidation(validationConfig);
